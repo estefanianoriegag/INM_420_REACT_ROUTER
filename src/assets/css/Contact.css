@@ -1,0 +1,150 @@
+/* mobile-first styles for smaller screens */
+/* Contact Form styles */
+.contact-container {
+    margin: 20px 40px 10px 40px;
+}
+
+.contact-intro {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin-bottom: 50px;
+}
+
+.contact-container h2 {
+    font-family: 'Lilita One', sans-serif;
+    font-size: 55px;
+    color: #EF6262;
+    margin-bottom: -10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 75vw;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #F3AA60;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #EF6262;
+}
+
+/* Image container styles */
+
+.image-container img {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Background shape */
+.shape10 {
+    width: 75vw;
+    border-radius: 5px;
+    height: 500px;
+    background-color: #FDD36A;
+    border-radius: 20px;
+    z-index: -1;
+    position: absolute;
+    bottom: 480px;
+    left: 100px;
+}
+
+
+/* media query for larger screens (e.g., tablets and desktops) */
+@media (min-width: 768px) {
+
+    /* Contact Form styles */
+    .contact-container {
+        margin: 50px 100px 10px 100px;
+        text-align: start;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .contact-intro {
+        font-size: 30px;
+        line-height: 40px;
+        width: 800px;
+    }
+
+    .contact-form {
+        margin: 0;
+    }
+
+    .contact-container h2 {
+        font-size: 100px;
+    }
+
+    .form-group label {
+        font-size: 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 40vw;
+    }
+
+    button[type="submit"] {
+        font-size: 20px;
+    }
+
+    /* Image container styles */
+    .image-container {
+        padding-right: 20px;
+        margin-left: 50px;
+        height: 90vh;
+    }
+
+    .image-container img {
+        width: 600px;
+        border-radius: 10px;
+        position: relative;
+        right: -10vw;
+        top: 5vh;
+    }
+    /* Background shape */
+    .shape10 {
+        position: relative;
+        bottom: 800px;
+        left: 13vw;
+        width: 600px;
+        height: 900px;
+        background-color: #FDD36A;
+        border-radius: 20px;
+        z-index: -1;
+    }
+
+}

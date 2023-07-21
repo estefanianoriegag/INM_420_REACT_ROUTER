@@ -1,0 +1,92 @@
+/* mobile-first styles for smaller screens */
+/* Home Page styles */
+.home-container {
+    margin: 20px 40px 10px 40px;
+}
+
+.introduction-section {
+    margin-bottom: 30px;
+}
+
+.introduction-section h2 {
+    font-family: 'Lilita One', sans-serif;
+    font-size: 55px;
+    color: #EF6262;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+
+.introduction-section p {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.projects-row {
+    margin-bottom: 10px;
+}
+
+.projects-row img {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.services-section h2 {
+    font-size: 40px;
+    color: #F3AA60;
+    font-family: 'Lilita One', sans-serif;
+    font-weight: 100;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.services-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services-section li {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+
+/* media query for larger screens (e.g., tablets and desktops) */
+@media (min-width: 768px) {
+
+    .home-container {
+        margin: 50px 100px 10px 100px;
+    }
+
+    .introduction-section h2 {
+        font-size: 100px;
+    }
+
+    .introduction-section p {
+        font-size: 30px;
+        line-height: 1.6;
+    }
+
+    .projects-row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+
+    .projects-row img {
+        width: 23%;
+    }
+
+    .services-section h2 {
+        font-size: 50px;
+        text-align: start;
+    }
+
+    .services-section li {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+}
